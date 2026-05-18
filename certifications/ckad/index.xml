@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Docs – CKAD</title>
+    <link>http://localhost:1313/docs/certifications/ckad/</link>
+    <description>Recent content in CKAD on My Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 18 May 2026 11:33:02 +0900</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/docs/certifications/ckad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Result</title>
+      <link>http://localhost:1313/docs/certifications/ckad/result/</link>
+      <pubDate>Mon, 18 May 2026 11:38:21 +0900</pubDate>
+      
+      <guid>http://localhost:1313/docs/certifications/ckad/result/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
