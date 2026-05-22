@@ -1,0 +1,159 @@
+
+:root {
+  /* Page width */
+  --hextra-max-page-width: 90rem;
+  /* Navbar width */
+  --hextra-max-navbar-width: 90rem;
+  /* Footer width */
+  --hextra-max-footer-width: 60rem;
+}
+
+/* 본문 폰트 */
+.content {
+  font-family: 'Pretendard', 'Pretendard', sans-serif;
+  font-size: 0.9rem !important;
+}
+
+/* 코드 폰트 */
+@layer theme {
+  :root {
+    --hx-default-mono-font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* 다크모드 배지 */
+.dark .hextra-badge div {
+  background-color: #0F1E2E !important;
+  color: #BACAE3 !important;
+  border-color: #BACAE3 !important;
+}
+
+/* 사이드바 */
+.hextra-sidebar-container a,
+.hextra-sidebar-container span {
+  font-size: 0.7rem !important;
+}
+
+/* 우측 TOC */
+.hextra-toc a,
+.hextra-toc p {
+  font-size: 0.7rem !important;
+}
+
+/* 본문 */
+.content,
+.content p,
+.content li {
+  font-size: 0.9rem !important;
+}
+
+/* 인라인 코드 크기 */
+.content code:not(pre code) {
+  font-size: 0.8em !important;
+}
+
+/* ================================
+   Color Palette
+   Main:   #BACAE3  (Soft Sky Blue)
+   Dark:   #8AAED4  (Steel Blue)
+   Link:   #9BB8D8  (Muted Blue)
+   Dim:    #6A8BAA  (Dim Blue)
+================================ */
+
+/* 사이드바 활성화 항목 */
+.dark [class*="hx:dark:text-primary"] {
+  color: #BACAE3 !important;
+}
+.dark [class*="hx:dark:bg-primary"] {
+  background-color: #242424 !important;
+}
+
+/* 우측 TOC 활성화 항목 */
+.dark a[aria-current="location"] {
+  color: #BACAE3 !important;
+}
+
+/* 호버 */
+.dark a:hover {
+  color: #BACAE3 !important;
+}
+
+/* 본문 하이퍼링크 */
+.dark main a {
+  color: #9BB8D8 !important;
+}
+.dark main a:hover {
+  color: #BACAE3 !important;
+}
+
+/* 섹션 anchor 링크 제외 */
+.dark main a.subheading-anchor {
+  color: inherit !important;
+}
+
+/* 검색창 */
+.dark .hextra-search-input {
+  background-color: #0A0A0A !important;
+  color: #BACAE3 !important;
+}
+
+/* 검색창 placeholder */
+.dark .hextra-search-input::placeholder {
+  color: #6A8BAA !important;
+}
+
+/* 검색창 포커스 테두리 */
+.dark .hextra-search-input:focus-visible,
+.dark .hextra-search-input:focus {
+  border-color: #8AAED4 !important;
+  outline: 2px solid #8AAED4 !important;
+  outline-offset: 0px !important;
+  box-shadow: 0 0 0 2px #8AAED4 !important;
+  background-color: #0A0A0A !important;
+}
+
+/* ⌘K 단축키 뱃지 */
+.dark .hextra-search-wrapper kbd {
+  background-color: #0A0A0A !important;
+  color: #BACAE3 !important;
+  border-color: #8AAED4 !important;
+}
+
+/* 검색창 X 버튼 */
+.dark .hextra-search-input::-webkit-search-cancel-button {
+  filter: invert(70%) sepia(20%) saturate(400%) hue-rotate(180deg);
+}
+
+/* 검색 키워드 하이라이트 */
+.dark .hextra-search-match {
+  color: #BACAE3 !important;
+}
+
+/* 검색 결과 호버/활성화 배경 */
+.dark .hextra-search-active {
+  background-color: #242424 !important;
+}
+.dark .hextra-search-results li:hover > a {
+  background-color: #242424 !important;
+}
+
+/* 코드블럭 배경 */
+.dark pre {
+  background-color: #161616 !important;
+  border: 1px solid #2A2A2A !important;
+}
+
+/* 인라인 코드 */
+.dark code {
+  color: #BACAE3 !important;
+}
+
+/* 카드 호버 테두리 */
+.dark .hextra-card:hover {
+  border-color: #BACAE3 !important;
+}
+
+/* 카드 호버 시 아이콘/제목 색상 */
+.dark .hextra-card:hover .hextra-card-icon {
+  color: #BACAE3 !important;
+}

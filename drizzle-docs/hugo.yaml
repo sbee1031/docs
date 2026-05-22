@@ -1,0 +1,68 @@
+baseURL: https://sbee1031.github.io/docs/
+locale: ko
+title: DrizzleDocs
+theme: hextra
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+params:
+  description: All Documents here!
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: true
+  externalLinkDecoration: false
+  favicon: favicon.svg
+  theme:
+    default: dark
+    displayToggle: true
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      width: 40
+      height: 20
+  page:
+    displayPagination: false
+  kubernetes:
+    article:
+      displayPagination: true
+  imageZoom:
+    enable: false
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      js: js/vendor/flexsearch.bundle.min.js
+      index: content
+      tokenize: forward
+
+taxonomies:
+  category: categories
+  tag: tags
+
+frontmatter:
+  draft: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      hardWraps: true
+  highlight:
+    style: rose-pine
+    noClasses: true
+
+menu:
+  main:
+    - name: About
+      url: /about
+      weight: 1
+    - name: Search
+      params:
+        type: search
+      weight: 99
