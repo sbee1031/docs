@@ -1,0 +1,212 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DrizzleDocs – ETC</title><link>https://sbee1031.github.io/docs/docs/etc/</link><description>Recent content in ETC on DrizzleDocs</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 May 2026 11:23:57 +0900</lastBuildDate><atom:link href="https://sbee1031.github.io/docs/docs/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>git-secret</title><link>https://sbee1031.github.io/docs/docs/etc/git-secret/</link><pubDate>Thu, 21 May 2026 13:43:11 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/git-secret/</guid><description>
+&lt;p&gt;Git 저장소에 시크릿(토큰, API 키, 비밀번호 등)을 올려야 하는데, 평문으로 올리면 누구나 볼 수 있기 때문에 위험하다.
+git-secret은 &lt;strong&gt;GPG 암호화로 파일을 암호화해서 커밋&lt;/strong&gt;하고, &lt;strong&gt;권한이 있는 사람만 복호화&lt;/strong&gt;할 수 있게 해준다.&lt;/p&gt;
+&lt;h2&gt;특징&lt;span class="hx:absolute hx:-mt-20" id="특징"&gt;&lt;/span&gt;
+&lt;a href="#%ed%8a%b9%ec%a7%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;저장소에는 항상 암호화된 파일(.secret)만 존재한다. 원본 파일은 &lt;code&gt;.gitignore&lt;/code&gt;에 자동 등록되어 커밋되지 않는다.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;tokens/aa ← 원본 (git에 안 올라감, .gitignore 처리됨)
+tokens/aa.secret ← 암호화된 버전 (git에 올라감)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;GPG 키가 등록된 계정만 복호화 가능&lt;/p&gt;
+&lt;h2&gt;설정 방법&lt;span class="hx:absolute hx:-mt-20" id="설정-방법"&gt;&lt;/span&gt;
+&lt;a href="#%ec%84%a4%ec%a0%95-%eb%b0%a9%eb%b2%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-steps hx:ml-4 hx:mb-12 hx:ltr:border-l hx:rtl:border-r hx:border-gray-200 hx:ltr:pl-6 hx:rtl:pr-6 hx:dark:border-neutral-800 [counter-reset:step]"&gt;
+&lt;h4&gt;초기 설정&lt;span class="hx:absolute hx:-mt-20" id="초기-설정"&gt;&lt;/span&gt;
+&lt;a href="#%ec%b4%88%ea%b8%b0-%ec%84%a4%ec%a0%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;cd my-repo/
+git secret init # 저장소에 .gitsecret/ 디렉토리 생성&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;복호화 권한 등록&lt;span class="hx:absolute hx:-mt-20" id="복호화-권한-등록"&gt;&lt;/span&gt;
+&lt;a href="#%eb%b3%b5%ed%98%b8%ed%99%94-%ea%b6%8c%ed%95%9c-%eb%93%b1%eb%a1%9d" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# &amp;#34;이 사람의 GPG 키로 암호화하겠다&amp;#34;는 의미
+git secret tell user@email.com
+git secret tell dl@email.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;.gitsecret/keys/&lt;/code&gt; 안에 해당 사용자의 GPG 공개키가 저장된다. 이후 &lt;code&gt;hide&lt;/code&gt;할 때 등록된 모든 사람의 공개키로 암호화된다.&lt;/p&gt;
+&lt;h4&gt;시크릿 파일 등록 및 암호화&lt;span class="hx:absolute hx:-mt-20" id="시크릿-파일-등록-및-암호화"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%81%ac%eb%a6%bf-%ed%8c%8c%ec%9d%bc-%eb%93%b1%eb%a1%9d-%eb%b0%8f-%ec%95%94%ed%98%b8%ed%99%94" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 원본 파일을 시크릿으로 등록
+git secret add tokens/aa&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;tokens/aa&lt;/code&gt;가 &lt;code&gt;.gitignore&lt;/code&gt;에 추가된다. (원본 업로드 X)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.gitsecret/paths/mapping.cfg&lt;/code&gt;에 파일 경로가 기록된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 암호화
+git secret hide&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;tokens/aa.secret&lt;/code&gt; 파일이 생성됨&lt;/p&gt;
+&lt;h4&gt;암호화 파일 커밋&lt;span class="hx:absolute hx:-mt-20" id="암호화-파일-커밋"&gt;&lt;/span&gt;
+&lt;a href="#%ec%95%94%ed%98%b8%ed%99%94-%ed%8c%8c%ec%9d%bc-%ec%bb%a4%eb%b0%8b" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;git add -A
+git commit -m &amp;#34;add encrypted token&amp;#34;
+git push&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;복호화&lt;span class="hx:absolute hx:-mt-20" id="복호화"&gt;&lt;/span&gt;
+&lt;a href="#%eb%b3%b5%ed%98%b8%ed%99%94" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;git clone ...
+git secret tell {user} # 이미 등록되어 있으면 스킵
+git secret reveal # .secret 파일들을 복호화 → 원본 생성&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;reveal&lt;/code&gt;이 성공하면 &lt;code&gt;tokens/aa.secret&lt;/code&gt; → &lt;code&gt;tokens/aa&lt;/code&gt; 원본이 생성된다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2&gt;핵심 명령어 정리&lt;span class="hx:absolute hx:-mt-20" id="핵심-명령어-정리"&gt;&lt;/span&gt;
+&lt;a href="#%ed%95%b5%ec%8b%ac-%eb%aa%85%eb%a0%b9%ec%96%b4-%ec%a0%95%eb%a6%ac" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;명령어&lt;/th&gt;
+&lt;th&gt;역할&lt;/th&gt;
+&lt;th&gt;용도&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret init&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;저장소 초기화&lt;/td&gt;
+&lt;td&gt;최초 1회&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret tell &amp;lt;email&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;GPG 공개키 등록 (복호화 권한 부여)&lt;/td&gt;
+&lt;td&gt;사용자 추가 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret add &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;파일을 비밀 관리 대상에 등록&lt;/td&gt;
+&lt;td&gt;새 비밀 파일 추가 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret hide&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;등록된 파일을 암호화 (.secret 생성)&lt;/td&gt;
+&lt;td&gt;원본이 변경되었거나 사용자가 추가된 후&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret reveal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;.secret 파일을 복호화 (원본 복원)&lt;/td&gt;
+&lt;td&gt;clone 후, 또는 CI/CD에서&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret list&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;관리 중인 비밀 파일 목록 확인&lt;/td&gt;
+&lt;td&gt;디버깅 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret whoknows&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;복호화 권한이 있는 사용자 목록&lt;/td&gt;
+&lt;td&gt;디버깅 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret removeperson &amp;lt;email&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;권한 제거&lt;/td&gt;
+&lt;td&gt;퇴사/이동 시 (이후 hide 다시 해야 함)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Jenkins에서의 흐름&lt;span class="hx:absolute hx:-mt-20" id="jenkins에서의-흐름"&gt;&lt;/span&gt;
+&lt;a href="#jenkins%ec%97%90%ec%84%9c%ec%9d%98-%ed%9d%90%eb%a6%84" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;Jenkins 빌드 시작
+↓
+git clone (repo.git) ← .secret 파일들만 존재
+↓
+git secret tell {user} ← Jenkins 서버의 GPG 키 확인
+↓
+git secret reveal ← .secret → 원본 복호화
+↓
+cat tokens/aa ← 복호화된 토큰을 읽어서 사용&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Hextra</title><link>https://sbee1031.github.io/docs/docs/etc/hextra/</link><pubDate>Wed, 20 May 2026 16:27:23 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/hextra/</guid><description>
+&lt;p&gt;북마크&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;#34;https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/&amp;#34; target=&amp;#34;_blank&amp;#34; class=&amp;#34;hextra-card&amp;#34; style=&amp;#34;display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;&amp;#34;&amp;gt;
+&amp;lt;div style=&amp;#34;font-weight:600; color:#BACAE3;&amp;#34;&amp;gt;Certified Kubernetes Security Specialist (CKS) | Linux Foundation Education &amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

@@ -1,40 +1,782 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Docs on My Docs</title>
-    <link>http://localhost:1313/docs/docs/</link>
-    <description>Recent content in Docs on My Docs</description>
-    <generator>Hugo</generator>
-    <language>ko</language>
-    <lastBuildDate>Mon, 18 May 2026 10:07:07 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Kubernetes</title>
-      <link>http://localhost:1313/docs/docs/kubernetes/</link>
-      <pubDate>Mon, 18 May 2026 10:07:07 +0900</pubDate>
-      <guid>http://localhost:1313/docs/docs/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Elb</title>
-      <link>http://localhost:1313/docs/docs/elb/</link>
-      <pubDate>Mon, 18 May 2026 09:58:12 +0900</pubDate>
-      <guid>http://localhost:1313/docs/docs/elb/</guid>
-      <description>&lt;p&gt;elb 페이지 입니다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lambda</title>
-      <link>http://localhost:1313/docs/docs/lambda/</link>
-      <pubDate>Mon, 18 May 2026 09:58:02 +0900</pubDate>
-      <guid>http://localhost:1313/docs/docs/lambda/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>EC2</title>
-      <link>http://localhost:1313/docs/docs/ec2/</link>
-      <pubDate>Mon, 18 May 2026 09:57:47 +0900</pubDate>
-      <guid>http://localhost:1313/docs/docs/ec2/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DrizzleDocs – Docs</title><link>https://sbee1031.github.io/docs/docs/</link><description>Recent content in Docs on DrizzleDocs</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 May 2026 10:48:00 +0900</lastBuildDate><atom:link href="https://sbee1031.github.io/docs/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>CKA 취득후기</title><link>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cka-result/</link><pubDate>Wed, 20 May 2026 11:22:31 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cka-result/</guid><description>
+&lt;p&gt;&lt;img src="https://sbee1031.github.io/docs/images/cka-result.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;지난 2024년 2월, 4월 부로 CKA 자격 유효기간이 3년에서 2년으로 변경된다는 소식을 듣고 부랴부랴 시험을 신청하고 준비하기 시작했다.&lt;/p&gt;
+&lt;p&gt;약 한달 반 정도의 시간을 들여 시험에 합격할 수 있었고, 처음 CKA자격증을 준비하는 사람들에게 도움이 되었으면 하여 취득 후기와 시험 준비 중 정리해놓은 내용을 글로 남긴다.&lt;/p&gt;
+&lt;h2&gt;CKA?&lt;span class="hx:absolute hx:-mt-20" id="cka"&gt;&lt;/span&gt;
+&lt;a href="#cka" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;CKA자격증이란&lt;span class="hx:absolute hx:-mt-20" id="cka자격증이란"&gt;&lt;/span&gt;
+&lt;a href="#cka%ec%9e%90%ea%b2%a9%ec%a6%9d%ec%9d%b4%eb%9e%80" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CKA(Certified Kubernetes Administrator)자격증은 리눅스 재단(The Linux Foundation)에서 인증하는 쿠버네티스 관련 자격증으로 Kubernetes 관리자로써 기술, 지식 및 역량을 갖췄음을 검증한다.&lt;/p&gt;
+&lt;p&gt;쿠버네티스 관련 자격증은 쿠버네티스 운영/개발/보안 총 3가지가 있는데, 그 중 쿠버네티스 &lt;strong&gt;운영&lt;/strong&gt; 관련 자격증이다.&lt;/p&gt;
+&lt;h3&gt;시험방식&lt;span class="hx:absolute hx:-mt-20" id="시험방식"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98%eb%b0%a9%ec%8b%9d" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;온라인 원격 시험(PSI Secure Browser)&lt;/li&gt;
+&lt;li&gt;2시간 동안 시험 진행&lt;/li&gt;
+&lt;li&gt;15~20 문제 출제, 합격 커트라인 66점&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;시험 장소 및 환경&lt;span class="hx:absolute hx:-mt-20" id="시험-장소-및-환경"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%ec%9e%a5%ec%86%8c-%eb%b0%8f-%ed%99%98%ea%b2%bd" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;시험 일정을 선택하여 예약 가능(시험일 하루 전까지 변경 및 취소 가능)&lt;/li&gt;
+&lt;li&gt;개방되지 않은 조용한 공간&lt;/li&gt;
+&lt;li&gt;시험에 필요한 노트북 또는 데스크탑, 키보드, 마우스 외에 전자기기 금지&lt;/li&gt;
+&lt;li&gt;그림 및 기타 벽 장식 외 금지&lt;/li&gt;
+&lt;li&gt;시험 환경에서 Kubernetes 공식문서 열람 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;온라인 원격 시험이기 때문에 시험 장소 및 환경에 대한 규제가 엄격하다.&lt;/p&gt;
+&lt;p&gt;시험 전에 PSI Secure Browser 에 접속하여 시험 환경에 대한 감독관 확인을 받는데, 이 때 시험 장소를 전체적으로 캠 화면을 통해서 보여줘야 하고 책상 아래도 확인한다.
+나같은 경우 블루투스 키보드와 마우스를 따로 사용했는데 노트북과 키보드를 들어서 책상에 아무 것도 없다는 것을 확인받도록 했다.&lt;/p&gt;
+&lt;p&gt;여담으로 처음 시험 장소를 선택할 때 스터디카페 회의실을 예약하려 했는데 회의실에 TV 가 있는 경우가 많아 장소 예약에 어려움이 있었다. 물론 TV 위에 담요를 덮으면 된다고 하는 후기들도 있었지만, 인터넷 환경도 불안하고 여러 모로 불안요소가 많아 사람이 거의 없는 주말에 회사 1인회의실에서 보기로 결정했다.
+또 모니터에 대한 얘기가 많은데, 모니터를 연결해서 시험을 볼 수 있지만 대신 웹캠이 추가적으로 필요하다. 나는 14인치 노트북으로 시험을 봤고 화면이 작긴 했지만 시험을 못 볼 정도는 아니였다.&lt;/p&gt;
+&lt;h3&gt;killer.sh&lt;span class="hx:absolute hx:-mt-20" id="killersh"&gt;&lt;/span&gt;
+&lt;a href="#killersh" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;시험을 접수하면 시험과 동일한 환경과 문제를 풀어볼 수 있는 killer.sh 라는 세션을 2회 제공해준다. 한 번 세션을 열면 36시간동안 접속할 수 있고 채점 결과 및 솔루션도 제공해준다. 또한 실제 시험 환경의 터미널에서는 붙여넣기 단축키가 &lt;code&gt;Ctrl+Shift+V&lt;/code&gt; 인데, 이러한 익숙치않은 환경을 미리 접하여 적응도 하고 연습문제도 제공해줌으로써 합격을 도와주려는 취지로 제공하는 것 같다.&lt;/p&gt;
+&lt;p&gt;실제 killer.sh 세션에도 공식적으로 이런 문구가 있을 정도로 killer.sh 문제의 난이도가 어렵기로 유명한데, 나도 마찬가지로 매우 어렵게 느껴졌다. 처음 120분동안 풀었던 문제가 겨우 5문제 정도 되었다. 문제를 다 풀고 나서 멘탈이 살짝 흔들렸지만 CKA 관련 오픈채팅방 사람들이 실제 시험보다 훨씬 더 어렵다고 해줘서 그나마 안심이 되었다.
+결과적으로 나는 killer.sh 세션을 1회만 사용했고, 매우 도움이 되었다. 그리고 나중에 알게된 사실이지만 남은 세션도 유효기간 안에 활성화하여 풀어볼 수 있다.&lt;/p&gt;
+&lt;h2&gt;취득사유&lt;span class="hx:absolute hx:-mt-20" id="취득사유"&gt;&lt;/span&gt;
+&lt;a href="#%ec%b7%a8%eb%93%9d%ec%82%ac%ec%9c%a0" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;나는 플랫폼 운영업무를 담당하고 있는데, 처음 클라우드 환경을 접하고 서비스 구축을 위해 Helm Chart 를 작성하고 배포를 하면서 정말 기초적인 것도 모르고 맨 땅에 헤딩하듯 눈앞에 닥친 문제들만 해결해나가기 바빴다. 그렇게 구축을 완료하고서 쿠버네티스 기초 지식이 잘 쌓여 있었다면 많은 시간을 할애하지 않을 수도 있었다는 생각이 들었다. 또한 운영자동화/개선에 대한 고민을 하면서 지식이 좀 더 깊다면 더 효과적인 성과를 낼 수 있을 것이라 생각했다.&lt;/p&gt;
+&lt;p&gt;제일 큰 문제는 내가 사용하는 클라우드 환경은 사내용으로 제공되고 있기 때문에 클라우드 운영부서가 따로 있다는 점이었다. 그렇기에 사용자로써의 역할이 강했고 쿠버네티스 클러스터 자체에 대한 운영/관리의 기회가 없어 아쉬워했다.&lt;/p&gt;
+&lt;p&gt;그러던 와중에 CKA 자격 유효기간 변경이라는 좋은 구실이 생겼고, 회사에서 CKA 자격증 취득비용을 지원한다고 하여 합격하면 공짜, 불합격하면 멍청비용! &lt;del&gt;기회는 2번인데 설마 떨어지겠어&lt;/del&gt; 라는 생각으로 CKA자격증 취득 준비를 시작했다.&lt;/p&gt;
+&lt;h2&gt;CKA 신청&lt;span class="hx:absolute hx:-mt-20" id="cka-신청"&gt;&lt;/span&gt;
+&lt;a href="#cka-%ec%8b%a0%ec%b2%ad" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;시험 신청은 &lt;a href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"target="_blank" rel="noopener"&gt;Linux Foundation&lt;/a&gt; 홈페이지에서 할 수 있고, 운이 좋게도 나는 설날 할인행사로 40% 할인을 받아 시험을 신청할 수 있었다.
+할인 행사를 꽤 자주 하기도 하고, 비용 결제 후 1년 안에만 시험 접수를 하면 되기때문에 자격증 취득이 급하지 않은 사람들은 할인율이 높은 때를 이용하는 것이 좋을 것 같다.&lt;/p&gt;
+&lt;h2&gt;시험준비&lt;span class="hx:absolute hx:-mt-20" id="시험준비"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98%ec%a4%80%eb%b9%84" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;a href="https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests"target="_blank" rel="noopener"&gt;[Udemy] Certified-kubernetes-with-practice-tests&lt;/a&gt;&lt;span class="hx:absolute hx:-mt-20" id="heading"&gt;&lt;/span&gt;
+&lt;a href="#heading" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;나는 CKA 공부의 바이블이라 불리는 Udemy 뭄샤드 마남베쓰님의 강의로 공부를 시작했다. 사실 이 강의는 한참 전에 친구로부터 아이디를 공유받았던 강의인데, 매우 시기적절하게 활용하게 되었다.&lt;/p&gt;
+&lt;p&gt;처음 강의를 들었을 때 취약한 영어 실력으로 인해 정신을 못 차리긴 했지만, 사람은 적응의 동물이라고 점점 강의 내용도 들리고 집중할 수 있었다. 무엇 보다 kodekloud 실습 환경을 제공해줘서 연습하기 좋았다.
+핸즈온 시험을 처음보던 터라 감도 잘 안 잡혔는데 실습 문제를 풀면서 공부하니까 부족한 부분을 중점적으로 공부할 수 있어 도움이 많이 되었다.&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://www.youtube.com/watch?v=KdATmTulf7s&amp;amp;list=PLApuRlvrZKojqx9-wIvWP3MPtgy2B372f&amp;amp;index=1"target="_blank" rel="noopener"&gt;[따배씨] CKA시리즈&lt;/a&gt;&lt;span class="hx:absolute hx:-mt-20" id="heading-1"&gt;&lt;/span&gt;
+&lt;a href="#heading-1" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Udemy 강의 다음으로 유명한 이성미 강사님의 강의이다. 강의 내용이 너무 좋았지만 시간이 얼마 없어 다 보지는 못했다. 그래서 Udemy 강의에서 이해되지 않는 부분만 찾아보면서 참고했다.
+강의에서 내용을 설명하시면서 그림으로 그려주시는 부분이 이해하는 데 도움이 많이 되었다.&lt;/p&gt;
+&lt;h2&gt;시험 팁&lt;span class="hx:absolute hx:-mt-20" id="시험-팁"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%ed%8c%81" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Kubernetes 공식문서 활용&lt;span class="hx:absolute hx:-mt-20" id="kubernetes-공식문서-활용"&gt;&lt;/span&gt;
+&lt;a href="#kubernetes-%ea%b3%b5%ec%8b%9d%eb%ac%b8%ec%84%9c-%ed%99%9c%ec%9a%a9" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CKA 시험에서 공식문서를 볼 수 있기 때문에 이 점을 적극적으로 활용해야 한다. 공부하면서 자주 쓰이는 yaml 파일의 링크를 잘 기억하는 것이 좋다. 참고로 공부할 때도 영어 버전의 공식 문서를 참고하는 것이 좋다. 시험 환경에서 한국어가 다 깨져서 나왔다..😅
+내가 주로 참고했던 페이지는 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.29/"target="_blank" rel="noopener"&gt;API Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/pt-br/docs/reference/kubectl/cheatsheet/"target="_blank" rel="noopener"&gt;kubectl Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그리고 이건 깨알 팁인데, PV/Volumes 관련 yaml 파일 작성이 많기 때문에 &lt;a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/"target="_blank" rel="noopener"&gt;PV - hostPath&lt;/a&gt; 페이지를 따로 띄워놓고 활용하는 것이 좋다.&lt;/p&gt;
+&lt;h3&gt;kubectl 활용&lt;span class="hx:absolute hx:-mt-20" id="kubectl-활용"&gt;&lt;/span&gt;
+&lt;a href="#kubectl-%ed%99%9c%ec%9a%a9" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;간단한 오브젝트 생성은 yaml 파일이 아닌 kubectl 명령을 사용하는 것이 좋다. 시간을 단축하는 데 도움이 된다. 그리고 &lt;strong&gt;각 문제 마다 &lt;code&gt;kubectl config use-context&lt;/code&gt; 잊지 말것 !&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;시험 환경 세팅&lt;span class="hx:absolute hx:-mt-20" id="시험-환경-세팅"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%ed%99%98%ea%b2%bd-%ec%84%b8%ed%8c%85" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;시험이 시작되면 터미널을 열어 다음과 같이 세팅해주면 시간을 단축할 수 있어 추천한다.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebbcba"&gt;alias&lt;/span&gt; &lt;span style="color:#ebbcba"&gt;kd&lt;/span&gt;&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#f6c177"&gt;&amp;#39;k describe&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebbcba"&gt;export&lt;/span&gt; &lt;span style="color:#31748f"&gt;do&lt;/span&gt;&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#f6c177"&gt;&amp;#39;--dry-run=client -o yaml&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebbcba"&gt;export&lt;/span&gt; &lt;span style="color:#ebbcba"&gt;now&lt;/span&gt;&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#f6c177"&gt;&amp;#39;--force --grace-period 0&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;이렇게 설정해두면 이런 식으로 활용할 수 있다.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# describe 명령 사용&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kd po abc-012
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# deployment yaml 파일로 작성&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k create deploy deploy01 --image&lt;span style="color:#908caa"&gt;=&lt;/span&gt;busybox:1.28 --replicas&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#f6c177"&gt;2&lt;/span&gt; &lt;span style="color:#ebbcba"&gt;$do&lt;/span&gt; -- sleep &lt;span style="color:#f6c177"&gt;4800&lt;/span&gt; &amp;gt; deploy01.yaml
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# 기존 파드 설정 변경 후 재생성&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k replace &lt;span style="color:#ebbcba"&gt;$now&lt;/span&gt; -f pod-new.yaml&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;유용한 kubectl 명령어&lt;span class="hx:absolute hx:-mt-20" id="유용한-kubectl-명령어"&gt;&lt;/span&gt;
+&lt;a href="#%ec%9c%a0%ec%9a%a9%ed%95%9c-kubectl-%eb%aa%85%eb%a0%b9%ec%96%b4" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;kubectl run 또는 create 와 같은 명령어를 사용하여 yaml 템플릿을 빠르게 생성할 수 있다. 시험 중에 일일이 공식 문서에서 템플릿을 찾아 복붙하는 것은 시간이 오래 걸리기 때문에 이 방법을 추천한다.
+kubectl 은 설명이 잘 나와있기 때문에 &lt;code&gt;-h&lt;/code&gt; 옵션을 통해 사용하기 좋다.&lt;/p&gt;
+&lt;p&gt;아래는 사용 예시이다.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# 다른 kube config 의 context 설정&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k config --kubeconfig&lt;span style="color:#908caa"&gt;={}&lt;/span&gt; use-context context01
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# label 확인&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k get po --show-labels
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# label 설정(이미 생성된 deploy 일 경우, deploy 에 label 설정 시 pod 를 내렸다가 다시 띄워야 함)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k label deploy deploy01 app:nginx
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# label 제거(label key 가 app 일 때)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k label deploy deploy01 app-
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# 특정 label 이 설정된 파드 확인&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k get po -l&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#ebbcba"&gt;app&lt;/span&gt;&lt;span style="color:#908caa"&gt;=&lt;/span&gt;nginx
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e6a86"&gt;# secret/configmap 생성&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k create secret/cm &amp;lt;name&amp;gt; --from-literal&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#ebbcba"&gt;USER&lt;/span&gt;&lt;span style="color:#908caa"&gt;=&lt;/span&gt;USER01 --from-literal&lt;span style="color:#908caa"&gt;=&lt;/span&gt;&lt;span style="color:#ebbcba"&gt;PW&lt;/span&gt;&lt;span style="color:#908caa"&gt;=&lt;/span&gt;PASSWORD&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;시험 문제 유형&lt;span class="hx:absolute hx:-mt-20" id="시험-문제-유형"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%eb%ac%b8%ec%a0%9c-%ec%9c%a0%ed%98%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;실제 시험에서 출제되었던 문제는 다음과 같으며 총 17문제였다.(순서는 랜덤)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Network Policy&lt;/li&gt;
+&lt;li&gt;ETCD 백업 및 복구&lt;/li&gt;
+&lt;li&gt;Multi Container(2문제)&lt;/li&gt;
+&lt;li&gt;스테이트풀셋 레플리카 수 조정 및 기록(record)&lt;/li&gt;
+&lt;li&gt;파드 생성&lt;/li&gt;
+&lt;li&gt;RBAC - Clusterrole + Rolebinding&lt;/li&gt;
+&lt;li&gt;마스터노드 업그레이드&lt;/li&gt;
+&lt;li&gt;마스터노드 트러블슈팅&lt;/li&gt;
+&lt;li&gt;노드 수를 확인하여 결과값을 파일에 저장&lt;/li&gt;
+&lt;li&gt;파드 로그 중 에러가 포함된 라인을 파일에 저장&lt;/li&gt;
+&lt;li&gt;정적 파드 생성&lt;/li&gt;
+&lt;li&gt;PVC 생성 및 파드에 볼륨 마운트&lt;/li&gt;
+&lt;li&gt;Secret 생성 후 파드에 환경변수 설정 및 볼륨 마운트&lt;/li&gt;
+&lt;li&gt;NodePort 서비스 생성&lt;/li&gt;
+&lt;li&gt;Deployment 생성&lt;/li&gt;
+&lt;li&gt;서비스 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;시험 시간 2시간은 그리 길지 않다. CKA 시험을 볼 때 잘 모르겠거나 헷갈리는 문제가 있다면 과감히 패스하고 전체적으로 문제를 다 풀고 다시 돌아와서 푸는 방법을 추천한다.
+나같은 경우 뒤로 갈수록 간단하고 쉬운 문제들이 많아 머리를 식히는데 도움이 되었다.&lt;/p&gt;
+&lt;p&gt;내 기준에서 제일 시간을 많이 썼던 문제는 ETCD 복구와 Network Policy 설정, 마스터노드 업그레이드 문제였다.&lt;/p&gt;
+&lt;p&gt;Network Policy 문제가 1번으로 나왔는데 공부할 때부터 자신 없던 영역의 문제가 나오니까 멘탈이 흔들리는 것 같았다. 5분 정도 헤매다가 스킵하고 모든 문제를 다 풀고 다시 돌아와서 풀었던 기억이 난다.&lt;/p&gt;
+&lt;p&gt;ETCD 백업 및 복구 문제의 경우 백업까지는 잘 되었으나 백업한 스냅샷으로 ETCD 를 복구시키면 정상적으로 클러스터가 작동하지 않아 시간을 많이 썼지만 결국 해결하진 못했다.&lt;/p&gt;
+&lt;h2&gt;시험 후기&lt;span class="hx:absolute hx:-mt-20" id="시험-후기"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%ed%9b%84%ea%b8%b0" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;캠을 통해 감독관이 나를 지켜보고 있다는 부담감이 잠깐 들긴했지만, 시험에 집중하는 순간 그런 사실은 생각도 나지 않았다. 2시간이 정말 빠르게 지나갔고 끝까지 해결하지 못한 ETCD 복구 문제는 아직도 기억에 남는다.&lt;/p&gt;
+&lt;p&gt;시험 종료 24시간 후 시험 결과를 메일로 남겨주는데, 이렇게 메일이 여러 개 온다.
+&lt;img src="https://velog.velcdn.com/images/sblee/post/276f1d59-635b-4a57-bf44-7f08de079aed/image.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Portal 에 가서 시험 점수를 확인할 수 있다. 어떤 문제를 틀렸는지 알려주지 않는 게 아쉬웠다.
+&lt;img src="https://velog.velcdn.com/images/sblee/post/e2976fab-35d8-40a5-8fed-9d142f963347/image.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;여러 자격증 시험을 준비하면서 이렇게 역량 확보에 도움이 된 자격증은 처음인 것 같다. 그저 달달 외워서 푸는 필기 시험이 아닌 핸즈온 시험으로 지식의 습득과 이해를 바탕으로 활용해야 풀 수 있었기 때문이라고 생각한다.&lt;/p&gt;
+&lt;p&gt;컨트롤플레인노드가 뭔지도 잘 몰랐던 내가 클러스터의 전체 아키텍처부터 트러블슈팅, 쿠버네티스 오브젝트의 yaml 작성 방법, RBAC, Network Policy 등 너무나도 배운 게 많았다.&lt;/p&gt;
+&lt;p&gt;결과적으로 시험을 합격하면서 취득 비용도 전액 지원 받고 운영 업무에 도움이 되는 지식도 습득하는 좋은 시간이었다.
+클라우드 환경에서 업무를 해야 한다면 한 번쯤은 공부해보는 것을 추천한다.&lt;/p&gt;</description></item><item><title>CKAD 취득후기</title><link>https://sbee1031.github.io/docs/docs/certifications/kubernetes/ckad-result/</link><pubDate>Wed, 20 May 2026 11:22:33 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/certifications/kubernetes/ckad-result/</guid><description>
+&lt;blockquote&gt;
+&lt;p&gt;이 글은 2024년 4월 28일 기준 CKAD 취득 후기입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;CKA 자격증을 취득하고 난 후, 쿠버네티스 공부에 재미가 들린 나는 목표가 없으면 또 흐지부지 될 것을 알기 때문에 CKAD &amp;gt;취득을 고민했다.
+쿠버네티스 관련 지식이 조금이라도 선명할 때 CKAD를 함께 취득하는 것이 좋다고 생각해서 시험을 보게 되었다.
+CKA와 마찬가지로 취득을 고민하는 분들께 도움이 되었으면 하는 마음으로 취득 후기를 남긴다!&lt;/p&gt;
+&lt;h2&gt;CKAD?&lt;span class="hx:absolute hx:-mt-20" id="ckad"&gt;&lt;/span&gt;
+&lt;a href="#ckad" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;CKAD 자격증이란&lt;span class="hx:absolute hx:-mt-20" id="ckad-자격증이란"&gt;&lt;/span&gt;
+&lt;a href="#ckad-%ec%9e%90%ea%b2%a9%ec%a6%9d%ec%9d%b4%eb%9e%80" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CKAD(Certified Kubernetes Application Developer)자격증은 리눅스 재단(The Linux Foundation)에서 인증하는 쿠버네티스 &amp;gt;관련 자격증으로 쿠버네티스에서 클라우드 네이티브 애플리케이션을 설계, 구축, 구성 및 노출하는 데 필요한 지식 및 역량&amp;gt;을 검증하는 자격증이다.&lt;/p&gt;
+&lt;p&gt;쿠버네티스 관련 자격증은 쿠버네티스 운영/개발/보안 총 3가지가 있는데, 그 중 쿠버네티스 &lt;strong&gt;개발&lt;/strong&gt; 관련 자격증이다.&lt;/p&gt;
+&lt;h3&gt;시험 정보&lt;span class="hx:absolute hx:-mt-20" id="시험-정보"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%ec%a0%95%eb%b3%b4" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;시험방식, 장소 및 환경, 시뮬레이터(killer.sh), 팁 등 시험에 관련한 정보는 CKA와 동일하여 CKA 취득후기를 참고 바란다.&lt;/p&gt;
+&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;"&gt;
+&lt;a
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://sbee1031.github.io/docs/cka/result"
+&gt;&lt;div class="hx:mt-auto"&gt;
+&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/&gt;&lt;/svg&gt;CKA 취득후기&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;h2&gt;시험준비&lt;span class="hx:absolute hx:-mt-20" id="시험준비"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98%ec%a4%80%eb%b9%84" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;CKAD는 CKA 취득 후 한 달도 안 돼서 준비를 했기 때문에, 기존에 공부했던 내용들을 복습하고, 시험 신청 시 제공되는 시뮬
+레이터를 이용해서 준비한 게 끝이다.
+CKA와 달랐던 부분은 주로 helm, configmap, job, probe 등 매니페스트 작성 관련한 부분인데, 사실 이 중 대부분은 실무에&amp;gt;서 해봤던 내용이기 때문에 크게 어렵지 않았다.&lt;/p&gt;
+&lt;h2&gt;시험 문제 유형&lt;span class="hx:absolute hx:-mt-20" id="시험-문제-유형"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%eb%ac%b8%ec%a0%9c-%ec%9c%a0%ed%98%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;기억나는 시험 문제&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cronjob 설정&lt;/li&gt;
+&lt;li&gt;deployment 작성&lt;/li&gt;
+&lt;li&gt;securityContext 설정&lt;/li&gt;
+&lt;li&gt;카나리배포&lt;/li&gt;
+&lt;li&gt;configmap 작성&lt;/li&gt;
+&lt;li&gt;deployment 배포 및 롤백&lt;/li&gt;
+&lt;li&gt;deployment에 서비스를 통해 포트 노출하기&lt;/li&gt;
+&lt;li&gt;도커이미지 빌드 및 배포&lt;/li&gt;
+&lt;li&gt;secret 생성 후 파드에 설정&lt;/li&gt;
+&lt;li&gt;network policy 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;시험 후기&lt;span class="hx:absolute hx:-mt-20" id="시험-후기"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%97%98-%ed%9b%84%ea%b8%b0" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;CKAD는 CKA를 취득한 직후에 준비한 거라 준비도 제대로 하지 않았는데도 불구하고 수월하게 취득할 수 있었다. CKA를 열심&amp;gt;히 준비하기도 했고, CKAD가 상대적으로 난이도가 낮기도 해서 그렇다고 생각한다.
+또 개인적인 생각으로 kubestronaut에 관심있는 것이 아니라면 CKA만 취득해도 괜찮을 것 같다. (시험이 워낙 비싸기 때문에
+..)&lt;/p&gt;
+&lt;p&gt;다음번엔 CKS 취득을 도전해보려고 한다!&lt;/p&gt;</description></item><item><title>CKS 취득후기</title><link>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cks-result/</link><pubDate>Wed, 20 May 2026 11:22:36 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cks-result/</guid><description>
+&lt;p&gt;&lt;img src="https://sbee1031.github.io/docs/images/cks-result.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;CKA, CKAD를 취득하고 2년 가까이 쉬다가 블프 때 사두었던 CKS 응시권 만료가 다가와서 부랴부랴 시험을 준비했다.
+더 기억이 흐려지기 전에, CKS 취득후기를 남기려고 한다!&lt;/p&gt;
+&lt;h1&gt;CKS란?&lt;/h1&gt;&lt;a href="https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/" target="_blank" style="display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;"&gt;
+&lt;div style="font-weight:600; color:#BACAE3;"&gt;Certified Kubernetes Security Specialist (CKS) | Linux Foundation&lt;/div&gt;
+&lt;div style="font-size:0.8rem; color:#6A8BAA;"&gt;https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/&lt;/div&gt;
+&lt;/a&gt;
+&lt;p&gt;CKS(Certificated Kubernetes Security Specialist)는 쿠버네티스 환경에서의 보안 실무 능력을 검증하는 시험으로, CKA 취득이 필수 조건이다.
+단순 보안 설정뿐만 아니라, 이미지 빌드부터 배포, 런타임 보안, 로깅 및 감사 등 전체 라이프사이클을 다룬다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cluster Setup (15%)&lt;/li&gt;
+&lt;li&gt;Cluster Hardening (15%)&lt;/li&gt;
+&lt;li&gt;System Hardening (10%)&lt;/li&gt;
+&lt;li&gt;Minimize Microservice Vulnerabilities (20%)&lt;/li&gt;
+&lt;li&gt;Supply Chain Security (20%)&lt;/li&gt;
+&lt;li&gt;Monitoring, Logging and Runtime Security (20%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;시험정보&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;시험 환경 : PSI(원격 시험)&lt;/li&gt;
+&lt;li&gt;소요 시간 : 120분&lt;/li&gt;
+&lt;li&gt;시험 문제 : 15-20문제&lt;/li&gt;
+&lt;li&gt;합격 기준 : 66점&lt;/li&gt;
+&lt;li&gt;재시험 포함 총 2회 시험 응시 가능&lt;/li&gt;
+&lt;li&gt;결과는 24시간 이내 이메일로 안내&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;시험 공부&lt;/h1&gt;&lt;p&gt;CKS 공부도 CKA와 마찬가지로 강의 시청 및 실습 위주로 진행하려고 했으나, 응시 기간이 얼마 남지 않은 관계로 실습 먼저 진행하고, 잘 이해가 가지 않는 부분에 대해서는 강의를 보면서 개념을 다시 잡는 방식으로 진행했다.&lt;/p&gt;
+&lt;p&gt;CKA, CKAD는 쿠버네티스 공식문서에 나와 있는 것만으로도 충분히 문제를 풀 수 있었는데 CKS는 공식문서만으론 좀 부족하기 때문에 리눅스나 오픈소스 명령어를 많이 익히는게 좋다.&lt;/p&gt;
+&lt;p&gt;난 KodeKloud 실습 -&amp;gt; 부족한 부분 강의 시청 -&amp;gt; killercoda로 각 유형별 문제 파악 및 복습 -&amp;gt; killer.sh 순서로 시험을 준비했다.&lt;/p&gt;
+&lt;h3&gt;KodeKloud&lt;span class="hx:absolute hx:-mt-20" id="kodekloud"&gt;&lt;/span&gt;
+&lt;a href="#kodekloud" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;a href="https://learn.kodekloud.com/user/courses/certified-kubernetes-security-specialist-cks" target="_blank" style="display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;"&gt;
+&lt;div style="font-weight:600; color:#BACAE3;"&gt;Certified Kubernetes Security Specialist (CKS) | KodeKloud&lt;/div&gt;
+&lt;div style="font-size:0.8rem; color:#6A8BAA;"&gt;https://learn.kodekloud.com/user/courses/certified-kubernetes-security-specialist-cks&lt;/div&gt;
+&lt;/a&gt;
+&lt;p&gt;뭄샤드 선생님의 CKS 강의는 KodeKloud만 있어서, 하는 수 없이 구독을 통해 강의를 들을 수 밖에 없었다~~(월 3만 5천원 &amp;hellip;)~~.
+비싼데 소장도 불가능한 KodeKloud의 강의를 들은 이유는 딱히 CKA처럼 바이블이라고 불리는 강의도 없을 뿐더러, 실습 환경이 너무 잘 되어 있어서다.
+온라인 시험이다 보니 손으로 익히는 감이 제일 중요한데, 여태까지 CKA, CKAD를 준비하면서 KodeKloud 실습 환경보다 편하고 성능 좋은 환경은 못봤다.&lt;/p&gt;
+&lt;p&gt;강의 구성과 실습 환경 등은 Udemy CKA 강의와 거의 똑같기 때문에 참고하면 된다.&lt;/p&gt;
+&lt;h3&gt;Killercoda&lt;span class="hx:absolute hx:-mt-20" id="killercoda"&gt;&lt;/span&gt;
+&lt;a href="#killercoda" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;a href="https://killercoda.com/killer-shell-cks" target="_blank" style="display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;"&gt;
+&lt;div style="font-weight:600; color:#BACAE3;"&gt;Killer Shell CKS | Killercoda&lt;/div&gt;
+&lt;div style="font-size:0.8rem; color:#6A8BAA;"&gt;https://killercoda.com/killer-shell-cks&lt;/div&gt;
+&lt;/a&gt;
+&lt;p&gt;CKS는 리눅스 및 오픈소스 명령어들도 익혀야 하는데, Killercoda는 각 문제 유형 및 툴 별로 문제를 골라서 풀어보기 좋다.
+KodeKloud 실습 문제를 많이 풀다보면 답이 외워져서 손가락만 움직이게 될 때가 있는데 이럴 때 유용하게 썼다.&lt;/p&gt;
+&lt;h3&gt;killer.sh&lt;span class="hx:absolute hx:-mt-20" id="killersh"&gt;&lt;/span&gt;
+&lt;a href="#killersh" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Killer.sh은 시험 신청 시 무료로 2회 제공해주는 시뮬레이터인데, 시험 환경 적응 및 문제 유형 파악을 위해 시험 전에 풀어보는 것이 좋다.
+세션은 36시간만 활성화되기 때문에, 시험 2~3일 전에 풀어보고, 틀린 문제는 정리해놓고 비슷한 유형의 문제들을 더 풀어보면서 준비하면 된다.&lt;/p&gt;
+&lt;p&gt;공식문서에 Killer.sh이 실제 시험보다 난이도가 어렵다고 나와 있지만, 나는 비슷하거나 실제 시험이 더 어렵다고 느꼈다.&lt;/p&gt;
+&lt;h1&gt;시험문제 복기&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;kube-bench (kubelet, apiserver anonymous 설정하기)&lt;/li&gt;
+&lt;li&gt;ingress&lt;/li&gt;
+&lt;li&gt;network policy&lt;/li&gt;
+&lt;li&gt;tls secret 생성&lt;/li&gt;
+&lt;li&gt;istio sidecar, mTLS&lt;/li&gt;
+&lt;li&gt;/dev/mem 접근하는 컨테이너 찾아서 deployment scale 0 (falco)&lt;/li&gt;
+&lt;li&gt;audit&lt;/li&gt;
+&lt;li&gt;imagepolicywebhook&lt;/li&gt;
+&lt;li&gt;noderestriction&lt;/li&gt;
+&lt;li&gt;docker root group 변경 및 TCP 제거&lt;/li&gt;
+&lt;li&gt;컨테이너 3개 있는 deploy 중 특정 패키지 버전을 사용하는 이미지의 bom 생성&lt;/li&gt;
+&lt;li&gt;클러스터 버전 업그레이드&lt;/li&gt;
+&lt;li&gt;Immutable 설정&lt;/li&gt;
+&lt;li&gt;docker/yaml 보안 강화할 수 있도록 수정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;시험 후기&lt;/h1&gt;&lt;p&gt;보안 관련된 지식이 없기도 하고, 쿠버네티스 자체 지식보다 더 많은 것을 요구하는 시험이라 그런지 CKA 때 보다 훨씬 어렵게 느껴졌다.&lt;/p&gt;
+&lt;p&gt;특히 내가 느꼈던 건,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;어떤 툴을 이용해서 해결해야 하는지 문제에서 가르쳐주지 않는다.&lt;/li&gt;
+&lt;li&gt;다른 오픈소스 공식문서 활용 필요 (Cilium, Falco 등)&lt;/li&gt;
+&lt;li&gt;CKA, CKAD는 대부분의 문제가 컨텍스트 변경만 필요하고 서버를 옮겨다니는 문제는 거의 없는데, CKS는 문제마다 &lt;code&gt;ssh&lt;/code&gt;로 옮겨 다녀야 한다. -&amp;gt; alias 설정이 무의미해서 일일이 다 손으로 쳐야 한다..&lt;/li&gt;
+&lt;li&gt;쿠버네티스만 안다고 풀 수 없는 문제도 있다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;CKS는 1차 시험에 불합격해서 2차 시험까지 보게 되었는데, 처음엔 문제 유형별로 감이 좀 부족해서인가 시간이 오래 걸려 다 풀지 못했다.
+그래서 재시험을 준비할 때 각 문제별로 기계처럼 답을 외우는 방식이 아니라 오픈소스별로 어떤 식으로 접근하고, 리눅스 명령어 어떤 것들이 필요한지 등의 깊이 있는 부분을 이해하려고 했다.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://sbee1031.github.io/docs/images/cks-score.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;2차 시험 때는 1차 때와 비슷한 유형의 문제가 나오기도 하고, 이해가 되니까 문제가 나름 잘 풀려서인지 점수를 높게 받았다.
+그런데 시간이 지난 지금 문제도 잘 기억 안 나는 걸 보면 시험용으로 바짝 준비해서 장기 기억으로 가진 못한 것 같다.
+여유가 되면 공부했던 내용 복습하면서 한 번 더 개념 정리하는 시간을 가지려고 한다.&lt;/p&gt;</description></item><item><title>Kubernetes 명령어 모음</title><link>https://sbee1031.github.io/docs/docs/kubernetes/commands/</link><pubDate>Thu, 21 May 2026 17:05:35 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kubernetes/commands/</guid><description>
+&lt;p&gt;공식문서 Quick Reference 참고&lt;/p&gt;
+&lt;a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/" target="_blank" style="display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;"&gt;
+&lt;div style="font-weight:600; color:#BACAE3;"&gt;kubectl Quick Reference | kubernetes.io&lt;/div&gt;
+&lt;div style="font-size:0.8rem; color:#6A8BAA;"&gt;https://kubernetes.io/docs/reference/kubectl/quick-reference/&lt;/div&gt;
+&lt;/a&gt;
+&lt;h3&gt;모니터링&lt;span class="hx:absolute hx:-mt-20" id="모니터링"&gt;&lt;/span&gt;
+&lt;a href="#%eb%aa%a8%eb%8b%88%ed%84%b0%eb%a7%81" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 이벤트 확인
+kubectl get events
+# 로그 확인
+kubectl logs &amp;lt;pod&amp;gt;
+# 파드 조회
+kubectl get pods
+# 컨테이너 접속
+kubectl exec -it &amp;lt;pods&amp;gt; &amp;lt;container&amp;gt; -- bash&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Helm(v2)&lt;span class="hx:absolute hx:-mt-20" id="helmv2"&gt;&lt;/span&gt;
+&lt;a href="#helmv2" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 릴리즈 설치
+helm install --name &amp;lt;release&amp;gt; -f values.yaml &amp;lt;chart&amp;gt;
+# 릴리즈 삭제
+helm delete --purge &amp;lt;release&amp;gt;
+# 릴리즈 조회
+helm list
+helm list --all
+# values 조회
+helm get values &amp;lt;release&amp;gt;
+# 백업하기
+helm get values &amp;lt;release&amp;gt; --all --output yaml &amp;gt; &amp;lt;release&amp;gt;-values.yaml
+helm get manifest &amp;lt;release&amp;gt; &amp;gt; &amp;lt;release&amp;gt;-manifest.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;secret&lt;span class="hx:absolute hx:-mt-20" id="secret"&gt;&lt;/span&gt;
+&lt;a href="#secret" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# secret 넣을 때 인코딩
+echo &amp;#39;&amp;lt;value&amp;gt;&amp;#39; | base64
+# 디코딩
+echo &amp;#39;&amp;lt;value&amp;gt;&amp;#39; | base64 -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;기타&lt;span class="hx:absolute hx:-mt-20" id="기타"&gt;&lt;/span&gt;
+&lt;a href="#%ea%b8%b0%ed%83%80" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;리소스 및 축약어 확인&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kubectl api-resources&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;권한 확인&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 현재 컨텍스트에서 가능한 권한 확인
+kubectl auth can-i --list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;리소스 쿼터 확인&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kubectl get quota&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;events 표준시간 확인&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kubectl get events -A -o custom-columns=NS:.metadata.namespace,NAME:.involvedObject.name,REASON:.reason,MESSAGE:.message,LASTTIME:.lastTimestamp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Kafka 명령어 모음</title><link>https://sbee1031.github.io/docs/docs/kafka/commands/</link><pubDate>Thu, 21 May 2026 15:18:35 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kafka/commands/</guid><description>
+&lt;blockquote&gt;
+&lt;p&gt;인증이 설정된 경우 명령어에 &lt;code&gt;--command-config=&amp;lt;auth file&amp;gt;&lt;/code&gt; 추가&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;kafka-topics.sh&lt;span class="hx:absolute hx:-mt-20" id="kafka-topicssh"&gt;&lt;/span&gt;
+&lt;a href="#kafka-topicssh" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;토픽 조회&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-topics.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;토픽 상세 조회&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-topics.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --topic &amp;lt;topic&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;토픽 생성&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-topics.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --create --topic &amp;lt;topic&amp;gt; --partitions &amp;lt;partition&amp;gt; --replication-factor &amp;lt;replicas&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;토픽 삭제&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-topics.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --delete --topic &amp;lt;topic&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;토픽 URP 조회&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-topics.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --under-replicated-partitions&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;토픽 URP 조회&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-topics.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --under-min-isr-partitions &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;kafka-configs.sh&lt;span class="hx:absolute hx:-mt-20" id="kafka-configssh"&gt;&lt;/span&gt;
+&lt;a href="#kafka-configssh" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;토픽 retention 설정&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-configs.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --alter --entity-type topics --entity-name &amp;lt;topic&amp;gt; --add-config retention.ms=&amp;lt;retention&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;토픽 설정 확인&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# dynamic config 확인
+kafka-configs --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --entity-type &amp;lt;topics/brokers&amp;gt;
+kafka-configs --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --entity-type &amp;lt;topics/brokers&amp;gt; --entity-name &amp;lt;topic/broker&amp;gt;
+# 기본값 포함 모든 설정 확인
+kafka-configs --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --entity-type topics --all
+kafka-configs --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --describe --entity-type topics --entity-name &amp;lt;topic/broker&amp;gt; --all&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;kafka-reassign-partition.sh&lt;span class="hx:absolute hx:-mt-20" id="kafka-reassign-partitionsh"&gt;&lt;/span&gt;
+&lt;a href="#kafka-reassign-partitionsh" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;파티션 리더 변경&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# json (__consumer_offsets 토픽 파티션 2번의 리더 변경)
+{
+&amp;#34;version&amp;#34;: 1,
+&amp;#34;partitions&amp;#34;: [
+{
+&amp;#34;topic&amp;#34;: &amp;#34;__consumer_offsets&amp;#34;,
+&amp;#34;partition&amp;#34;: 2,
+&amp;#34;replicas&amp;#34;: [1, 0, 2],
+&amp;#34;log_dirs&amp;#34;: [&amp;#34;any&amp;#34;, &amp;#34;any&amp;#34;, &amp;#34;any&amp;#34;]
+}
+]
+}
+kafka-reassign-partition.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --execute --reassignment-json-file &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;실행 중인 Partition Reassignment 작업 확인&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;kafka-reassign-partition.sh --bootstrap-server &amp;lt;bootstrap-server&amp;gt; --list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Consumer</title><link>https://sbee1031.github.io/docs/docs/kafka/consumer/</link><pubDate>Thu, 21 May 2026 14:29:47 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kafka/consumer/</guid><description/></item><item><title>Urp</title><link>https://sbee1031.github.io/docs/docs/kafka/urp/</link><pubDate>Thu, 21 May 2026 14:29:41 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kafka/urp/</guid><description/></item><item><title>git-secret</title><link>https://sbee1031.github.io/docs/docs/etc/git-secret/</link><pubDate>Thu, 21 May 2026 13:43:11 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/git-secret/</guid><description>
+&lt;p&gt;Git 저장소에 시크릿(토큰, API 키, 비밀번호 등)을 올려야 하는데, 평문으로 올리면 누구나 볼 수 있기 때문에 위험하다.
+git-secret은 &lt;strong&gt;GPG 암호화로 파일을 암호화해서 커밋&lt;/strong&gt;하고, &lt;strong&gt;권한이 있는 사람만 복호화&lt;/strong&gt;할 수 있게 해준다.&lt;/p&gt;
+&lt;h2&gt;특징&lt;span class="hx:absolute hx:-mt-20" id="특징"&gt;&lt;/span&gt;
+&lt;a href="#%ed%8a%b9%ec%a7%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;저장소에는 항상 암호화된 파일(.secret)만 존재한다. 원본 파일은 &lt;code&gt;.gitignore&lt;/code&gt;에 자동 등록되어 커밋되지 않는다.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;tokens/aa ← 원본 (git에 안 올라감, .gitignore 처리됨)
+tokens/aa.secret ← 암호화된 버전 (git에 올라감)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;GPG 키가 등록된 계정만 복호화 가능&lt;/p&gt;
+&lt;h2&gt;설정 방법&lt;span class="hx:absolute hx:-mt-20" id="설정-방법"&gt;&lt;/span&gt;
+&lt;a href="#%ec%84%a4%ec%a0%95-%eb%b0%a9%eb%b2%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-steps hx:ml-4 hx:mb-12 hx:ltr:border-l hx:rtl:border-r hx:border-gray-200 hx:ltr:pl-6 hx:rtl:pr-6 hx:dark:border-neutral-800 [counter-reset:step]"&gt;
+&lt;h4&gt;초기 설정&lt;span class="hx:absolute hx:-mt-20" id="초기-설정"&gt;&lt;/span&gt;
+&lt;a href="#%ec%b4%88%ea%b8%b0-%ec%84%a4%ec%a0%95" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;cd my-repo/
+git secret init # 저장소에 .gitsecret/ 디렉토리 생성&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;복호화 권한 등록&lt;span class="hx:absolute hx:-mt-20" id="복호화-권한-등록"&gt;&lt;/span&gt;
+&lt;a href="#%eb%b3%b5%ed%98%b8%ed%99%94-%ea%b6%8c%ed%95%9c-%eb%93%b1%eb%a1%9d" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# &amp;#34;이 사람의 GPG 키로 암호화하겠다&amp;#34;는 의미
+git secret tell user@email.com
+git secret tell dl@email.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;.gitsecret/keys/&lt;/code&gt; 안에 해당 사용자의 GPG 공개키가 저장된다. 이후 &lt;code&gt;hide&lt;/code&gt;할 때 등록된 모든 사람의 공개키로 암호화된다.&lt;/p&gt;
+&lt;h4&gt;시크릿 파일 등록 및 암호화&lt;span class="hx:absolute hx:-mt-20" id="시크릿-파일-등록-및-암호화"&gt;&lt;/span&gt;
+&lt;a href="#%ec%8b%9c%ed%81%ac%eb%a6%bf-%ed%8c%8c%ec%9d%bc-%eb%93%b1%eb%a1%9d-%eb%b0%8f-%ec%95%94%ed%98%b8%ed%99%94" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 원본 파일을 시크릿으로 등록
+git secret add tokens/aa&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;tokens/aa&lt;/code&gt;가 &lt;code&gt;.gitignore&lt;/code&gt;에 추가된다. (원본 업로드 X)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.gitsecret/paths/mapping.cfg&lt;/code&gt;에 파일 경로가 기록된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;# 암호화
+git secret hide&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;tokens/aa.secret&lt;/code&gt; 파일이 생성됨&lt;/p&gt;
+&lt;h4&gt;암호화 파일 커밋&lt;span class="hx:absolute hx:-mt-20" id="암호화-파일-커밋"&gt;&lt;/span&gt;
+&lt;a href="#%ec%95%94%ed%98%b8%ed%99%94-%ed%8c%8c%ec%9d%bc-%ec%bb%a4%eb%b0%8b" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;git add -A
+git commit -m &amp;#34;add encrypted token&amp;#34;
+git push&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;복호화&lt;span class="hx:absolute hx:-mt-20" id="복호화"&gt;&lt;/span&gt;
+&lt;a href="#%eb%b3%b5%ed%98%b8%ed%99%94" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;git clone ...
+git secret tell {user} # 이미 등록되어 있으면 스킵
+git secret reveal # .secret 파일들을 복호화 → 원본 생성&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;reveal&lt;/code&gt;이 성공하면 &lt;code&gt;tokens/aa.secret&lt;/code&gt; → &lt;code&gt;tokens/aa&lt;/code&gt; 원본이 생성된다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2&gt;핵심 명령어 정리&lt;span class="hx:absolute hx:-mt-20" id="핵심-명령어-정리"&gt;&lt;/span&gt;
+&lt;a href="#%ed%95%b5%ec%8b%ac-%eb%aa%85%eb%a0%b9%ec%96%b4-%ec%a0%95%eb%a6%ac" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;명령어&lt;/th&gt;
+&lt;th&gt;역할&lt;/th&gt;
+&lt;th&gt;용도&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret init&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;저장소 초기화&lt;/td&gt;
+&lt;td&gt;최초 1회&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret tell &amp;lt;email&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;GPG 공개키 등록 (복호화 권한 부여)&lt;/td&gt;
+&lt;td&gt;사용자 추가 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret add &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;파일을 비밀 관리 대상에 등록&lt;/td&gt;
+&lt;td&gt;새 비밀 파일 추가 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret hide&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;등록된 파일을 암호화 (.secret 생성)&lt;/td&gt;
+&lt;td&gt;원본이 변경되었거나 사용자가 추가된 후&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret reveal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;.secret 파일을 복호화 (원본 복원)&lt;/td&gt;
+&lt;td&gt;clone 후, 또는 CI/CD에서&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret list&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;관리 중인 비밀 파일 목록 확인&lt;/td&gt;
+&lt;td&gt;디버깅 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret whoknows&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;복호화 권한이 있는 사용자 목록&lt;/td&gt;
+&lt;td&gt;디버깅 시&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git secret removeperson &amp;lt;email&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;권한 제거&lt;/td&gt;
+&lt;td&gt;퇴사/이동 시 (이후 hide 다시 해야 함)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Jenkins에서의 흐름&lt;span class="hx:absolute hx:-mt-20" id="jenkins에서의-흐름"&gt;&lt;/span&gt;
+&lt;a href="#jenkins%ec%97%90%ec%84%9c%ec%9d%98-%ed%9d%90%eb%a6%84" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;Jenkins 빌드 시작
+↓
+git clone (repo.git) ← .secret 파일들만 존재
+↓
+git secret tell {user} ← Jenkins 서버의 GPG 키 확인
+↓
+git secret reveal ← .secret → 원본 복호화
+↓
+cat tokens/aa ← 복호화된 토큰을 읽어서 사용&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Hextra</title><link>https://sbee1031.github.io/docs/docs/etc/hextra/</link><pubDate>Wed, 20 May 2026 16:27:23 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/hextra/</guid><description>
+&lt;p&gt;북마크&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;#34;https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/&amp;#34; target=&amp;#34;_blank&amp;#34; class=&amp;#34;hextra-card&amp;#34; style=&amp;#34;display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;&amp;#34;&amp;gt;
+&amp;lt;div style=&amp;#34;font-weight:600; color:#BACAE3;&amp;#34;&amp;gt;Certified Kubernetes Security Specialist (CKS) | Linux Foundation Education &amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy Code"
+aria-label="Copy Code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
