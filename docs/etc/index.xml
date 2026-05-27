@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DrizzleDocs – ETC</title><link>https://sbee1031.github.io/docs/docs/etc/</link><description>Recent content in ETC on DrizzleDocs</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 May 2026 11:23:57 +0900</lastBuildDate><atom:link href="https://sbee1031.github.io/docs/docs/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>git-secret</title><link>https://sbee1031.github.io/docs/docs/etc/git-secret/</link><pubDate>Thu, 21 May 2026 13:43:11 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/git-secret/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DrizzleDocs – ETC</title><link>https://sbee1031.github.io/docs/etc/</link><description>Recent content in ETC on DrizzleDocs</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 May 2026 11:23:57 +0900</lastBuildDate><atom:link href="https://sbee1031.github.io/docs/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>git-secret</title><link>https://sbee1031.github.io/docs/etc/git-secret/</link><pubDate>Thu, 21 May 2026 13:43:11 +0900</pubDate><guid>https://sbee1031.github.io/docs/etc/git-secret/</guid><description>
 &lt;p&gt;Git 저장소에 시크릿(토큰, API 키, 비밀번호 등)을 올려야 하는데, 평문으로 올리면 누구나 볼 수 있기 때문에 위험하다.
 git-secret은 &lt;strong&gt;GPG 암호화로 파일을 암호화해서 커밋&lt;/strong&gt;하고, &lt;strong&gt;권한이 있는 사람만 복호화&lt;/strong&gt;할 수 있게 해준다.&lt;/p&gt;
 &lt;h2&gt;특징&lt;span class="hx:absolute hx:-mt-20" id="특징"&gt;&lt;/span&gt;
@@ -193,7 +193,7 @@ data-copied-label="Copied!"
 &lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Hextra</title><link>https://sbee1031.github.io/docs/docs/etc/hextra/</link><pubDate>Wed, 20 May 2026 16:27:23 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/hextra/</guid><description>
+&lt;/div&gt;</description></item><item><title>Hextra</title><link>https://sbee1031.github.io/docs/etc/hextra/</link><pubDate>Wed, 20 May 2026 16:27:23 +0900</pubDate><guid>https://sbee1031.github.io/docs/etc/hextra/</guid><description>
 &lt;p&gt;북마크&lt;/p&gt;
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;#34;https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/&amp;#34; target=&amp;#34;_blank&amp;#34; class=&amp;#34;hextra-card&amp;#34; style=&amp;#34;display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;&amp;#34;&amp;gt;

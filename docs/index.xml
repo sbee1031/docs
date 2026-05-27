@@ -1,5 +1,5 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DrizzleDocs – Docs</title><link>https://sbee1031.github.io/docs/docs/</link><description>Recent content in Docs on DrizzleDocs</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 May 2026 10:48:00 +0900</lastBuildDate><atom:link href="https://sbee1031.github.io/docs/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>CKA 취득후기</title><link>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cka-result/</link><pubDate>Wed, 20 May 2026 11:22:31 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cka-result/</guid><description>
-&lt;p&gt;&lt;img src="https://sbee1031.github.io/docs/images/cka-result.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DrizzleDocs – Docs</title><link>https://sbee1031.github.io/docs/</link><description>Recent content in Docs on DrizzleDocs</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 20 May 2026 10:48:00 +0900</lastBuildDate><atom:link href="https://sbee1031.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>CKA 취득후기</title><link>https://sbee1031.github.io/docs/certifications/kubernetes/cka-result/</link><pubDate>Wed, 20 May 2026 11:22:31 +0900</pubDate><guid>https://sbee1031.github.io/docs/certifications/kubernetes/cka-result/</guid><description>
+&lt;p&gt;&lt;img src="https://sbee1031.github.io/images/cka-result.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
 &lt;p&gt;지난 2024년 2월, 4월 부로 CKA 자격 유효기간이 3년에서 2년으로 변경된다는 소식을 듣고 부랴부랴 시험을 신청하고 준비하기 시작했다.&lt;/p&gt;
 &lt;p&gt;약 한달 반 정도의 시간을 들여 시험에 합격할 수 있었고, 처음 CKA자격증을 준비하는 사람들에게 도움이 되었으면 하여 취득 후기와 시험 준비 중 정리해놓은 내용을 글로 남긴다.&lt;/p&gt;
 &lt;h2&gt;CKA?&lt;span class="hx:absolute hx:-mt-20" id="cka"&gt;&lt;/span&gt;
@@ -160,7 +160,7 @@ data-copied-label="Copied!"
 &lt;p&gt;여러 자격증 시험을 준비하면서 이렇게 역량 확보에 도움이 된 자격증은 처음인 것 같다. 그저 달달 외워서 푸는 필기 시험이 아닌 핸즈온 시험으로 지식의 습득과 이해를 바탕으로 활용해야 풀 수 있었기 때문이라고 생각한다.&lt;/p&gt;
 &lt;p&gt;컨트롤플레인노드가 뭔지도 잘 몰랐던 내가 클러스터의 전체 아키텍처부터 트러블슈팅, 쿠버네티스 오브젝트의 yaml 작성 방법, RBAC, Network Policy 등 너무나도 배운 게 많았다.&lt;/p&gt;
 &lt;p&gt;결과적으로 시험을 합격하면서 취득 비용도 전액 지원 받고 운영 업무에 도움이 되는 지식도 습득하는 좋은 시간이었다.
-클라우드 환경에서 업무를 해야 한다면 한 번쯤은 공부해보는 것을 추천한다.&lt;/p&gt;</description></item><item><title>CKAD 취득후기</title><link>https://sbee1031.github.io/docs/docs/certifications/kubernetes/ckad-result/</link><pubDate>Wed, 20 May 2026 11:22:33 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/certifications/kubernetes/ckad-result/</guid><description>
+클라우드 환경에서 업무를 해야 한다면 한 번쯤은 공부해보는 것을 추천한다.&lt;/p&gt;</description></item><item><title>CKAD 취득후기</title><link>https://sbee1031.github.io/docs/certifications/kubernetes/ckad-result/</link><pubDate>Wed, 20 May 2026 11:22:33 +0900</pubDate><guid>https://sbee1031.github.io/docs/certifications/kubernetes/ckad-result/</guid><description>
 &lt;blockquote&gt;
 &lt;p&gt;이 글은 2024년 4월 28일 기준 CKAD 취득 후기입니다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -201,8 +201,8 @@ CKA와 달랐던 부분은 주로 helm, configmap, job, probe 등 매니페스�
 &lt;a href="#%ec%8b%9c%ed%97%98-%ed%9b%84%ea%b8%b0" class="subheading-anchor" aria-label="Permalink to this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;CKAD는 CKA를 취득한 직후에 준비한 거라 준비도 제대로 하지 않았는데도 불구하고 수월하게 취득할 수 있었다. CKA를 열심&amp;gt;히 준비하기도 했고, CKAD가 상대적으로 난이도가 낮기도 해서 그렇다고 생각한다.
 또 개인적인 생각으로 kubestronaut에 관심있는 것이 아니라면 CKA만 취득해도 괜찮을 것 같다. (시험이 워낙 비싸기 때문에
 ..)&lt;/p&gt;
-&lt;p&gt;다음번엔 CKS 취득을 도전해보려고 한다!&lt;/p&gt;</description></item><item><title>CKS 취득후기</title><link>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cks-result/</link><pubDate>Wed, 20 May 2026 11:22:36 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/certifications/kubernetes/cks-result/</guid><description>
-&lt;p&gt;&lt;img src="https://sbee1031.github.io/docs/images/cks-result.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;다음번엔 CKS 취득을 도전해보려고 한다!&lt;/p&gt;</description></item><item><title>CKS 취득후기</title><link>https://sbee1031.github.io/docs/certifications/kubernetes/cks-result/</link><pubDate>Wed, 20 May 2026 11:22:36 +0900</pubDate><guid>https://sbee1031.github.io/docs/certifications/kubernetes/cks-result/</guid><description>
+&lt;p&gt;&lt;img src="https://sbee1031.github.io/images/cks-result.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
 &lt;p&gt;CKA, CKAD를 취득하고 2년 가까이 쉬다가 블프 때 사두었던 CKS 응시권 만료가 다가와서 부랴부랴 시험을 준비했다.
 더 기억이 흐려지기 전에, CKS 취득후기를 남기려고 한다!&lt;/p&gt;
 &lt;h1&gt;CKS란?&lt;/h1&gt;&lt;a href="https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/" target="_blank" style="display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;"&gt;
@@ -276,10 +276,10 @@ KodeKloud 실습 문제를 많이 풀다보면 답이 외워져서 손가락만 
 &lt;/ol&gt;
 &lt;p&gt;CKS는 1차 시험에 불합격해서 2차 시험까지 보게 되었는데, 처음엔 문제 유형별로 감이 좀 부족해서인가 시간이 오래 걸려 다 풀지 못했다.
 그래서 재시험을 준비할 때 각 문제별로 기계처럼 답을 외우는 방식이 아니라 오픈소스별로 어떤 식으로 접근하고, 리눅스 명령어 어떤 것들이 필요한지 등의 깊이 있는 부분을 이해하려고 했다.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://sbee1031.github.io/docs/images/cks-score.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://sbee1031.github.io/images/cks-score.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
 &lt;p&gt;2차 시험 때는 1차 때와 비슷한 유형의 문제가 나오기도 하고, 이해가 되니까 문제가 나름 잘 풀려서인지 점수를 높게 받았다.
 그런데 시간이 지난 지금 문제도 잘 기억 안 나는 걸 보면 시험용으로 바짝 준비해서 장기 기억으로 가진 못한 것 같다.
-여유가 되면 공부했던 내용 복습하면서 한 번 더 개념 정리하는 시간을 가지려고 한다.&lt;/p&gt;</description></item><item><title>Kubernetes 명령어 모음</title><link>https://sbee1031.github.io/docs/docs/kubernetes/commands/</link><pubDate>Thu, 21 May 2026 17:05:35 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kubernetes/commands/</guid><description>
+여유가 되면 공부했던 내용 복습하면서 한 번 더 개념 정리하는 시간을 가지려고 한다.&lt;/p&gt;</description></item><item><title>Kubernetes 명령어 모음</title><link>https://sbee1031.github.io/docs/kubernetes/commands/</link><pubDate>Thu, 21 May 2026 17:05:35 +0900</pubDate><guid>https://sbee1031.github.io/docs/kubernetes/commands/</guid><description>
 &lt;p&gt;공식문서 Quick Reference 참고&lt;/p&gt;
 &lt;a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/" target="_blank" style="display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;"&gt;
 &lt;div style="font-weight:600; color:#BACAE3;"&gt;kubectl Quick Reference | kubernetes.io&lt;/div&gt;
@@ -405,7 +405,7 @@ data-copied-label="Copied!"
 &lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Kafka 명령어 모음</title><link>https://sbee1031.github.io/docs/docs/kafka/commands/</link><pubDate>Thu, 21 May 2026 15:18:35 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kafka/commands/</guid><description>
+&lt;/div&gt;</description></item><item><title>Kafka 명령어 모음</title><link>https://sbee1031.github.io/docs/kafka/commands/</link><pubDate>Thu, 21 May 2026 15:18:35 +0900</pubDate><guid>https://sbee1031.github.io/docs/kafka/commands/</guid><description>
 &lt;blockquote&gt;
 &lt;p&gt;인증이 설정된 경우 명령어에 &lt;code&gt;--command-config=&amp;lt;auth file&amp;gt;&lt;/code&gt; 추가&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -568,7 +568,7 @@ data-copied-label="Copied!"
 &lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Consumer</title><link>https://sbee1031.github.io/docs/docs/kafka/consumer/</link><pubDate>Thu, 21 May 2026 14:29:47 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kafka/consumer/</guid><description/></item><item><title>Urp</title><link>https://sbee1031.github.io/docs/docs/kafka/urp/</link><pubDate>Thu, 21 May 2026 14:29:41 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/kafka/urp/</guid><description/></item><item><title>git-secret</title><link>https://sbee1031.github.io/docs/docs/etc/git-secret/</link><pubDate>Thu, 21 May 2026 13:43:11 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/git-secret/</guid><description>
+&lt;/div&gt;</description></item><item><title>Consumer</title><link>https://sbee1031.github.io/docs/kafka/consumer/</link><pubDate>Thu, 21 May 2026 14:29:47 +0900</pubDate><guid>https://sbee1031.github.io/docs/kafka/consumer/</guid><description/></item><item><title>Urp</title><link>https://sbee1031.github.io/docs/kafka/urp/</link><pubDate>Thu, 21 May 2026 14:29:41 +0900</pubDate><guid>https://sbee1031.github.io/docs/kafka/urp/</guid><description/></item><item><title>git-secret</title><link>https://sbee1031.github.io/docs/etc/git-secret/</link><pubDate>Thu, 21 May 2026 13:43:11 +0900</pubDate><guid>https://sbee1031.github.io/docs/etc/git-secret/</guid><description>
 &lt;p&gt;Git 저장소에 시크릿(토큰, API 키, 비밀번호 등)을 올려야 하는데, 평문으로 올리면 누구나 볼 수 있기 때문에 위험하다.
 git-secret은 &lt;strong&gt;GPG 암호화로 파일을 암호화해서 커밋&lt;/strong&gt;하고, &lt;strong&gt;권한이 있는 사람만 복호화&lt;/strong&gt;할 수 있게 해준다.&lt;/p&gt;
 &lt;h2&gt;특징&lt;span class="hx:absolute hx:-mt-20" id="특징"&gt;&lt;/span&gt;
@@ -763,7 +763,7 @@ data-copied-label="Copied!"
 &lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Hextra</title><link>https://sbee1031.github.io/docs/docs/etc/hextra/</link><pubDate>Wed, 20 May 2026 16:27:23 +0900</pubDate><guid>https://sbee1031.github.io/docs/docs/etc/hextra/</guid><description>
+&lt;/div&gt;</description></item><item><title>Hextra</title><link>https://sbee1031.github.io/docs/etc/hextra/</link><pubDate>Wed, 20 May 2026 16:27:23 +0900</pubDate><guid>https://sbee1031.github.io/docs/etc/hextra/</guid><description>
 &lt;p&gt;북마크&lt;/p&gt;
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
 &lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;#34;https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/&amp;#34; target=&amp;#34;_blank&amp;#34; class=&amp;#34;hextra-card&amp;#34; style=&amp;#34;display:block; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #2A2A2A; text-decoration:none;&amp;#34;&amp;gt;
