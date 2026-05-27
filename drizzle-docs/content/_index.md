@@ -23,23 +23,23 @@ sidebar.hide: false
 
 ### Cloud
 {{< cards >}}
-  {{< card link="/docs/docs/kubernetes/" title="Kubernetes" icon="cube" subtitle="" >}}
+  {{< card link="/docs/kubernetes/" title="Kubernetes" icon="cube" subtitle="" >}}
 {{< /cards >}}
 
 ### Database
 {{< cards >}}
-  {{< card link="/docs/docs/kafka/" title="Kafka" icon="server" subtitle="운영 가이드 · 트러블 슈팅" >}}
+  {{< card link="/docs/kafka/" title="Kafka" icon="server" subtitle="운영 가이드 · 트러블 슈팅" >}}
 {{< /cards >}}
 
 ### Certifications [🔗](/docs)
 Kubernetes
 {{< cards >}}
-  {{< card link="/docs/docs/certifications/kubernetes/cka-result/" title="CKA" icon="academic-cap" subtitle="Certified Kubernetes Administrator" >}}
-  {{< card link="/docs/docs/certifications/kubernetes/ckad-result/" title="CKAD" icon="academic-cap" subtitle="Certified Kubernetes Application Developer" >}}
-  {{< card link="/docs/docs/certifications/kubernetes/cks-result/" title="CKS" icon="academic-cap" subtitle="Certified Kubernetes Security Specialist" >}}
+  {{< card link="/docs/certifications/kubernetes/cka-result/" title="CKA" icon="academic-cap" subtitle="Certified Kubernetes Administrator" >}}
+  {{< card link="/docs/certifications/kubernetes/ckad-result/" title="CKAD" icon="academic-cap" subtitle="Certified Kubernetes Application Developer" >}}
+  {{< card link="/docs/certifications/kubernetes/cks-result/" title="CKS" icon="academic-cap" subtitle="Certified Kubernetes Security Specialist" >}}
 {{< /cards >}}
 
 ### ETC
 {{< cards >}}
-  {{< card link="/docs/docs/etc/" title="ETC" icon="pencil" subtitle="그 외 문서 모음" >}}
+  {{< card link="/docs/etc/" title="ETC" icon="pencil" subtitle="그 외 문서 모음" >}}
 {{< /cards >}}
